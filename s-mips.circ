@@ -1410,12 +1410,12 @@
       <a name="incoming" val="4"/>
       <a name="appear" val="center"/>
     </comp>
+    <comp lib="0" loc="(730,430)" name="Clock"/>
     <comp lib="4" loc="(1140,180)" name="RAM">
       <a name="addrWidth" val="16"/>
       <a name="dataWidth" val="32"/>
       <a name="bus" val="separate"/>
     </comp>
-    <comp lib="0" loc="(730,430)" name="Clock"/>
     <comp lib="0" loc="(970,760)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Update Mem"/>
@@ -1943,6 +1943,7 @@
     <wire from="(430,590)" to="(430,600)"/>
     <wire from="(1010,530)" to="(1010,560)"/>
     <wire from="(820,390)" to="(860,390)"/>
+    <wire from="(1180,540)" to="(1180,550)"/>
     <wire from="(1260,540)" to="(1260,550)"/>
     <wire from="(720,240)" to="(720,260)"/>
     <wire from="(160,60)" to="(190,60)"/>
@@ -1966,15 +1967,15 @@
     <wire from="(640,1040)" to="(700,1040)"/>
     <wire from="(640,1010)" to="(640,1040)"/>
     <wire from="(1000,500)" to="(1040,500)"/>
+    <wire from="(1210,540)" to="(1210,550)"/>
     <wire from="(920,330)" to="(920,350)"/>
-    <wire from="(1170,540)" to="(1170,550)"/>
     <wire from="(600,970)" to="(600,990)"/>
     <wire from="(710,240)" to="(710,260)"/>
     <wire from="(390,650)" to="(430,650)"/>
     <wire from="(820,420)" to="(840,420)"/>
     <wire from="(1010,340)" to="(1010,380)"/>
-    <wire from="(1140,550)" to="(1150,550)"/>
     <wire from="(720,960)" to="(740,960)"/>
+    <wire from="(1140,550)" to="(1150,550)"/>
     <wire from="(670,220)" to="(700,220)"/>
     <wire from="(400,80)" to="(420,80)"/>
     <wire from="(160,400)" to="(180,400)"/>
@@ -2000,11 +2001,10 @@
     <wire from="(580,710)" to="(830,710)"/>
     <wire from="(490,590)" to="(490,610)"/>
     <wire from="(840,330)" to="(840,420)"/>
-    <wire from="(1200,540)" to="(1200,550)"/>
     <wire from="(1020,720)" to="(1020,740)"/>
     <wire from="(1300,480)" to="(1310,480)"/>
-    <wire from="(1250,550)" to="(1260,550)"/>
     <wire from="(590,880)" to="(610,880)"/>
+    <wire from="(1250,550)" to="(1260,550)"/>
     <wire from="(680,650)" to="(700,650)"/>
     <wire from="(400,250)" to="(420,250)"/>
     <wire from="(400,50)" to="(420,50)"/>
@@ -2241,10 +2241,6 @@
       <a name="facing" val="north"/>
       <a name="label" val="CLR"/>
     </comp>
-    <comp lib="0" loc="(1170,550)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLK"/>
-    </comp>
     <comp lib="3" loc="(660,990)" name="BitFinder">
       <a name="width" val="16"/>
     </comp>
@@ -2272,6 +2268,10 @@
       <a name="width" val="32"/>
       <a name="label" val="RegB"/>
     </comp>
+    <comp lib="0" loc="(1180,550)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLK"/>
+    </comp>
     <comp lib="1" loc="(600,970)" name="AND Gate">
       <a name="facing" val="south"/>
       <a name="width" val="16"/>
@@ -2281,10 +2281,6 @@
     <comp lib="0" loc="(180,160)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="RAM OUTPUT 0"/>
-    </comp>
-    <comp lib="0" loc="(1200,550)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="CLR"/>
     </comp>
     <comp lib="0" loc="(160,950)" name="Pin">
       <a name="width" val="4"/>
@@ -2350,6 +2346,10 @@
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="Next Ctr"/>
+    </comp>
+    <comp lib="0" loc="(1210,550)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="CLR"/>
     </comp>
     <comp lib="6" loc="(176,31)" name="Text">
       <a name="text" val="RAM ADDRESS"/>
@@ -3801,8 +3801,8 @@
     <wire from="(1330,1130)" to="(1380,1130)"/>
     <wire from="(1170,620)" to="(1350,620)"/>
     <wire from="(840,350)" to="(860,350)"/>
-    <wire from="(1040,70)" to="(1060,70)"/>
     <wire from="(990,340)" to="(1010,340)"/>
+    <wire from="(1040,70)" to="(1060,70)"/>
     <wire from="(540,530)" to="(560,530)"/>
     <wire from="(690,520)" to="(710,520)"/>
     <wire from="(740,250)" to="(760,250)"/>
@@ -5438,6 +5438,7 @@
       <circ-port height="10" pin="790,160" width="10" x="195" y="115"/>
       <circ-anchor facing="east" height="6" width="6" x="197" y="117"/>
     </appear>
+    <wire from="(260,250)" to="(320,250)"/>
     <wire from="(430,80)" to="(490,80)"/>
     <wire from="(550,240)" to="(550,320)"/>
     <wire from="(280,50)" to="(320,50)"/>
@@ -5465,6 +5466,7 @@
     <wire from="(430,60)" to="(500,60)"/>
     <wire from="(260,320)" to="(320,320)"/>
     <wire from="(260,310)" to="(260,320)"/>
+    <wire from="(260,230)" to="(260,250)"/>
     <wire from="(490,80)" to="(490,110)"/>
     <wire from="(280,520)" to="(320,520)"/>
     <wire from="(490,110)" to="(530,110)"/>
@@ -5554,6 +5556,10 @@
       <a name="width" val="32"/>
       <a name="label" val="Result"/>
     </comp>
+    <comp lib="0" loc="(320,250)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="Mul-Hi"/>
+    </comp>
     <comp lib="0" loc="(520,30)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
@@ -5619,7 +5625,7 @@
     </comp>
     <comp lib="0" loc="(320,210)" name="Tunnel">
       <a name="width" val="32"/>
-      <a name="label" val="Mul"/>
+      <a name="label" val="Mul-Lo"/>
     </comp>
     <comp lib="0" loc="(320,320)" name="Tunnel">
       <a name="width" val="32"/>
