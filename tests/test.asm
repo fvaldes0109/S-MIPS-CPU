@@ -10,4 +10,4 @@ sw r2 44(r0)
 tty r2
 halt
 
-#prints BB
+#prints BAB
